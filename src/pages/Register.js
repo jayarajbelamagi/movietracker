@@ -10,7 +10,7 @@ function Register({ setIsLoggedIn }) {
     setError("");
 
     // 1️⃣ Register user
-    const res = await fetch("https://movietrackerbackend.onrender.com/api/users/register", {
+    const res = await fetch("https://movietrackerbackend-1.onrender.com/api/users/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
