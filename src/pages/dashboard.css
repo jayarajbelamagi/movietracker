@@ -1,0 +1,55 @@
+.dashboard {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Flex container for stats + movies */
+.dashboard-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Stats on left */
+.stats {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  height: fit-content;
+}
+
+/* Movies list in center */
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 2;
+}
+
+/* Individual movie cards */
+.movie-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Add movie button */
+.add-movie-btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.add-movie-btn button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-movie-btn button:hover {
+  background-color: #45a049;
+}
