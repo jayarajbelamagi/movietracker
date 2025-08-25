@@ -22,7 +22,7 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
   const location = useLocation();
 
   const handleLogout = () => {
-    fetch("http://localhost:5000/api/users/logout", {
+    fetch("https://movietrackerbackend-1.onrender.com/api/users/logout", {
       method: "POST",
       credentials: "include",
     }).then(() => setIsLoggedIn(false));
@@ -53,7 +53,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/users/me", { credentials: "include" })
+    fetch("https://movietrackerbackend-1.onrender.com/api/users/me", { credentials: "include" })
       .then(res => setIsLoggedIn(res.ok))
       .catch(() => setIsLoggedIn(false));
   }, []);
