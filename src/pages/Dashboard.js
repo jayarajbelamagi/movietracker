@@ -9,7 +9,7 @@ function Dashboard({ username }) {
 
   const fetchMovies = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/movies", {
+      const res = await fetch("https://movietrackerbackend.onrender.com/api/movies", {
         credentials: "include",
       });
       const data = await res.json();
@@ -22,7 +22,7 @@ function Dashboard({ username }) {
 
   const fetchStats = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/movies/stats", {
+      const res = await fetch("https://movietrackerbackend.onrender.com/api/movies/stats", {
         credentials: "include",
       });
       const data = await res.json();
