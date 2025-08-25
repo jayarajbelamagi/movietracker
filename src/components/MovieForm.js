@@ -14,7 +14,7 @@ const MovieForm = ({ fetchMovies, onClose }) => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/movies/add",
+        "https://movietrackerbackend.onrender.com/api/movies/add",
         { title, genre, myRating },
         { withCredentials: true }
       );
